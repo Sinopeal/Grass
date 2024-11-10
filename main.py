@@ -18,7 +18,7 @@ async def connect_to_wss(socks5_proxy, user_id):
         try:
             await asyncio.sleep(random.uniform(0.1, 1.0))  # Reduced frequency
             custom_headers = {
-                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36 Edg/130.0.0.0"
             }
             ssl_context = ssl.create_default_context()
             ssl_context.check_hostname = False
@@ -27,7 +27,7 @@ async def connect_to_wss(socks5_proxy, user_id):
             server_hostname = "proxy.wynd.network"
             proxy = Proxy.from_url(socks5_proxy)
             async with proxy_connect(uri, proxy=proxy, ssl=ssl_context, extra_headers={
-                "Origin": "chrome-extension://lkbnfiajjmbhnfledhphioinpickokdi",
+                "Origin": "chrome-extension://ilehaonighjijnmpnagapkhpcdbhclfg",
                 "User-Agent": custom_headers["User-Agent"]
             }) as websocket:
                 async def send_ping():
@@ -54,8 +54,8 @@ async def connect_to_wss(socks5_proxy, user_id):
                                     "user_agent": custom_headers['User-Agent'],
                                     "timestamp": int(time.time()),
                                     "device_type": "extension",
-                                    "version": "4.20.2",
-                                    "extension_id": "lkbnfiajjmbhnfledhphioinpickokdi"
+                                    "version": "4.26.2",
+                                    "extension_id": "ilehaonighjijnmpnagapkhpcdbhclfg"
                                 }
                             }
                             logger.debug(auth_response)
