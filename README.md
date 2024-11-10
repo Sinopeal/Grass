@@ -1,22 +1,36 @@
-# Get Grass Multi Account 100% Uptime FREE Python Bot 1.25x NODE 
+# How to use
+## Get User Id
 
-# congratulations To everyone who have joined us in early days ! and Ran the Grass nodes !! IF you were happy with my work and found it usefull Please Drop a Like and Please Ping me in Discord DM and share your Grass Mining Proof !! And Stay Tunend for Furture Grass STAGE 2 and More Scripts for Now i am Archiving this Repo for further research and usage
+Open the link and log in https://app.getgrass.io/dashboard
+Press F12 on the page to open the console and enter the code (Ctrl + Shift + i) inspect
+Write localStorage.getItem('userId') in the console
+"PRINTED TEXT IS THE USER_ID"
+![image](https://github.com/user-attachments/assets/abdd663d-22e0-4198-94d2-24e88a06607a)
 
-- CONTACT : ` 0xphatom ` on Discord  https://discord.com/users/979641024215416842
+## Get Proxy
+The format of the proxy should be 
 
-#祝贺所有早期加入我们的人！并跑草节点！如果您对我的工作感到满意并发现它有用，请点赞并在 Discord DM 中 Ping 我并分享您的 Grass Mining 证明！敬请关注 Future Grass STAGE 2 及更多脚本
+socks5://username:password@ip:port
 
-- 联系方式：Discord上的0xphatom https://discord.com/users/979641024215416842(https://discord.com/users/979641024215416842)
+or 
 
-This Python Bot script manages WebSocket connections through specified SOCKS5 proxies, Unlimited Proxies and multiple get grass Accounts handling authentication and maintaining persistent connections with a server. The script also includes functionality to periodically send ping messages to keep the connection alive forever. If you can run your pc 24/7 then you dont need a Vps or proxy server lol
+http://username:password@ip:port
 
+## Configure your settings
+1. replace your user id.
 
-## Features
+![image](https://github.com/user-attachments/assets/db4915d1-9e40-4729-8bb2-636eea6775fc)
 
-- New feature added for 1.25x boost using Grass NODE !!
-- Connects to a WebSocket server using SOCKS5 proxies.
-- Per Proxy ~1500 **$Grass per day** ~2.25$ PER DAY !! Unlimited proxies Make Unlimited Money !
-- Handles All kinds of Error such a Dead proxy/ SSL: WRONG_VERSION_NUMBER / invalid length of packed IP address / Empty connect reply / sent 1011 (internal error) keepalive.
-- Automatically removes the dead proxy from the File!!
+2. write your proxies into file proxy.txt
 
-## FOR ANY KIND OF HELP CONTACT : ` 0xphatom ` on Discord  https://discord.com/users/979641024215416842
+![image](https://github.com/user-attachments/assets/2963cc56-7a31-4a36-a88c-0ada14502716)
+
+## Run and earn
+1. Install the requirements
+``` bash
+pip install -r requirements.txt
+```
+2. Run the script
+``` bash
+python3 main.py
+```
