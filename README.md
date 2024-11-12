@@ -16,6 +16,8 @@ or
 
 http://username:password@ip:port
 
+I haven't tested many proxy providers but, this is the proxy provider I am using: https://www.goproxy.com/. They can arrange a replacement if the IP is unavailable.
+
 ## Configure your settings
 1. replace your user id.
 
